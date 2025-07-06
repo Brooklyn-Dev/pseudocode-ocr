@@ -2,6 +2,10 @@
 
 Syntax highlighter and opinionated superset of the OCR A-level Computer Science [Specification](https://www.ocr.org.uk/images/170844-specification-accredited-a-level-gce-computer-science-h446.pdf#page=37).
 
+Made for Hack Club's YSWS [Extensify](https://extensify.hackclub.com/).
+
+<img src="icon.png" alt="Logo" style="display: block; margin: 0 auto;"/>
+
 This extension aims to enhance the experience of students taking the OCR A-level Computer Science course by providing syntax highlighting for pseudocode written in the design section of the NEA (Non-Exam Assessment.)
 
 -   Use the `.ocr` file extension to disable the extended syntax. This will only highlight valid OCR exam reference language.
@@ -29,7 +33,13 @@ Syntax stays faithful to the offical OCR exam reference language, while introduc
 
 ## Snippets
 
-Code snippets are supported for core programming constructs.
+Code snippets are only supported for core programming constructs.
+
+-   Classes: `class`, `classinherits`
+-   Condition-controlled iteration: `while`, `do`
+-   Count-controlled iteration: `for`, `forstep`, `foreach`
+-   Subroutines: `procedure`, `function`
+-   Selection: `if`, `ifelse`, `ifelseif`, `switch`
 
 ## Disclamer
 
@@ -38,3 +48,11 @@ Code snippets are supported for core programming constructs.
 -   This extension is an unofficial tool created to help fellow students
 -   Please refer to the official OCR specification for correct exam pseudocode syntax
 -   This extension is provided as-is for educational purposes
+
+## Like this project?
+
+If you find this project interesting or useful, consider giving it a star ⭐️!
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for more information.

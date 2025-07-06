@@ -1,68 +1,41 @@
 {
 	"name": "pseudocode-ocr",
 	"displayName": "Pseudocode OCR",
+	"version": "1.0.0",
 	"description": "Syntax highlighter and opinionated superset of the OCR A-level Computer Science Specification",
-	"version": "0.0.1",
-	"engines": {
-		"vscode": "^1.101.0"
-	},
 	"categories": [
 		"Programming Languages",
-		"Snippets"
+		"Snippets",
+		"Education"
 	],
-	"author": {
-		"name": "Brooklyn Baylis",
-		"url": "https://github.com/Brooklyn-Dev"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Brooklyn-Dev/pseudocode-ocr"
-	},
-	"bugs": {
-		"url": "https://github.com/Brooklyn-Dev/pseudocode-ocr/issues"
-	},
-	"homepage": "https://github.com/Brooklyn-Dev/pseudocode-ocr#readme",
 	"keywords": [
 		"pseudocode",
 		"ocr",
 		"syntax",
 		"highlighting",
 		"a-level",
-		"computer-science"
+		"computer-science",
+		"student"
 	],
+	"homepage": "https://github.com/Brooklyn-Dev/pseudocode-ocr#readme",
+	"bugs": {
+		"url": "https://github.com/Brooklyn-Dev/pseudocode-ocr/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Brooklyn-Dev/pseudocode-ocr"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Brooklyn Baylis",
+		"url": "https://github.com/Brooklyn-Dev"
+	},
+	"publisher": "BrooklynDev",
 	"scripts": {
 		"package": "vsce package",
 		"publish": "vsce publish"
 	},
 	"contributes": {
-		"languages": [
-			{
-				"id": "ocr-pseudocode",
-				"aliases": [
-					"OCR Pseudocode",
-					"pseudocode"
-				],
-				"extensions": [
-					".pseudo",
-					".pseudocode",
-					".ocr"
-				],
-				"configuration": "./language-configuration.json"
-			},
-			{
-				"id": "ocr-pseudocode-strict",
-				"aliases": [
-					"OCR Pseudocode (Strict)",
-					"pseudocode-strict"
-				],
-				"extensions": [
-					".pseudo",
-					".pseudocode",
-					".ocr"
-				],
-				"configuration": "./language-configuration.json"
-			}
-		],
 		"grammars": [
 			{
 				"language": "ocr-pseudocode",
@@ -73,6 +46,31 @@
 				"language": "ocr-pseudocode-strict",
 				"scopeName": "source.ocr-pseudocode-strict",
 				"path": "./syntaxes/ocr-pseudocode-strict.tmLanguage.json"
+			}
+		],
+		"languages": [
+			{
+				"id": "ocr-pseudocode",
+				"aliases": [
+					"OCR Pseudocode",
+					"pseudocode"
+				],
+				"extensions": [
+					".pseudo",
+					".pseudocode"
+				],
+				"configuration": "./language-configuration.json"
+			},
+			{
+				"id": "ocr-pseudocode-strict",
+				"aliases": [
+					"OCR Pseudocode (Strict)",
+					"pseudocode-strict"
+				],
+				"extensions": [
+					".ocr"
+				],
+				"configuration": "./language-configuration.json"
 			}
 		],
 		"snippets": [
@@ -86,8 +84,11 @@
 			}
 		]
 	},
-	"license": "MIT",
 	"devDependencies": {
 		"@vscode/vsce": "^3.6.0"
-	}
+	},
+	"engines": {
+		"vscode": "^1.101.0"
+	},
+	"icon": "icon.png"
 }

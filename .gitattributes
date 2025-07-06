@@ -1,3 +1,4 @@
 # Set default behavior to automatically normalize line endings.
 * text=auto
-*.tmLanguage.json linguist-language=JSON linguist-detectable=true
+syntaxes/ocr-pseudocode.tmLanguage.json linguist-language=JSON linguist-detectable=true
+snippets/ocr-pseudocode.json linguist-language=JSON linguist-detectable=true
