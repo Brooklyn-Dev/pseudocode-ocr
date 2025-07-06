@@ -75,13 +75,28 @@
 			]
 		},
 		"strings": {
-			"name": "string.quoted.double.ocr-pseudocode",
-			"begin": "\"",
-			"end": "\"",
 			"patterns": [
 				{
-					"name": "constant.character.escape.ocr-pseudocode",
-					"match": "\\\\."
+					"name": "string.quoted.double.ocr-pseudocode",
+					"begin": "\"",
+					"end": "\"",
+					"patterns": [
+						{
+							"name": "constant.character.escape.ocr-pseudocode",
+							"match": "\\\\."
+						}
+					]
+				},
+				{
+					"name": "string.quoted.single.ocr-pseudocode",
+					"begin": "'",
+					"end": "'",
+					"patterns": [
+						{
+							"name": "constant.character.escape.ocr-pseudocode",
+							"match": "\\\\."
+						}
+					]
 				}
 			]
 		},
