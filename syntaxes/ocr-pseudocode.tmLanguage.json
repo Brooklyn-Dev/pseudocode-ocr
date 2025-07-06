@@ -95,7 +95,7 @@
 				},
 				{
 					"name": "storage.modifier.ocr-pseudocode",
-					"match": "\\b(public|private|static|const)\\b"
+					"match": "\\b(public|protected|private|static|const|readonly|global|local)\\b"
 				},
 				{
 					"name": "constant.language.ocr-pseudocode",
