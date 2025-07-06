@@ -139,8 +139,24 @@
 			]
 		},
 		"numbers": {
-			"name": "constant.numeric.ocr-pseudocode",
-			"match": "\\b\\d+(\\.\\d+)?\\b"
+			"patterns": [
+				{
+					"name": "constant.numeric.ocr-pseudocode",
+					"match": "\\b0[bB][01]+\\b"
+				},
+				{
+					"name": "constant.numeric.ocr-pseudocode",
+					"match": "\\b0[oO][0-7]+\\b"
+				},
+				{
+					"name": "constant.numeric.ocr-pseudocode",
+					"match": "\\b0[xX][A-Fa-f0-9]+\\b"
+				},
+				{
+					"name": "constant.numeric.ocr-pseudocode",
+					"match": "\\b\\d+(\\.\\d+)?([eE][+-]?\\d+)?\\b"
+				}
+			]
 		},
 		"operators": {
 			"name": "keyword.operator.ocr-pseudocode",
