@@ -3,18 +3,43 @@
 	"name": "OCR Pseudocode",
 	"patterns": [
 		{
+			"include": "#comments"
+		},
+		{
 			"include": "#keywords"
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#operators"
 		}
 	],
 	"repository": {
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.block.ocr-pseudocode",
+					"begin": "/\\*",
+					"end": "\\*/"
+				},
+				{
+					"name": "comment.line.double-slash.ocr-pseudocode",
+					"begin": "//",
+					"end": "$"
+				}
+			]
+		},
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.ocr-pseudocode",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "keyword.control.ocr-pseudocode",
+					"match": "\\b(if|while|for|return)\\b"
+				}
+			]
 		},
 		"strings": {
 			"name": "string.quoted.double.ocr-pseudocode",
@@ -26,6 +51,14 @@
 					"match": "\\\\."
 				}
 			]
+		},
+		"numbers": {
+			"name": "constant.numeric.ocr-pseudocode",
+			"match": "\\b\\d+(\\.\\d+)?\\b"
+		},
+		"operators": {
+			"name": "keyword.operator.ocr-pseudocode",
+			"match": "(AND|OR|NOT|XOR|LSHIFT|RSHIFT|=|==|!=|<|<=|>|>=|\\+|\\-|\\*|\\/|MOD|DIV|\\^)"
 		}
 	},
 	"scopeName": "source.ocr-pseudocode"
