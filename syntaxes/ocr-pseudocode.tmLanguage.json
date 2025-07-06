@@ -62,11 +62,15 @@
 				},
 				{
 					"name": "storage.type.ocr-pseudocode",
-					"match": "\\b(class|endclass|procedure|endprocedure|function|endfunction|true|false)\\b"
+					"match": "\\b(class|inherits|super|endclass|new|procedure|endprocedure|function|endfunction)\\b"
 				},
 				{
 					"name": "storage.modifier.ocr-pseudocode",
 					"match": "\\b(public|private|static|const)\\b"
+				},
+				{
+					"name": "constant.language.ocr-pseudocode",
+					"match": "\\b(true|false|null|undefined)\\b"
 				}
 			]
 		},
