@@ -115,7 +115,7 @@
 				},
 				{
 					"name": "storage.type.ocr-pseudocode",
-					"match": "\\b(class|super|endclass|new|interface|endinterface|procedure|endprocedure|function|endfunction)\\b"
+					"match": "\\b(class|super|endclass|new|interface|endinterface|procedure|endprocedure|function|endfunction|array)\\b"
 				},
 				{
 					"name": "storage.modifier.ocr-pseudocode",

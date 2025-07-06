@@ -1,25 +1,36 @@
 {
-  "name": "pseudocode-ocr",
-  "displayName": "pseudocode-ocr",
-  "description": "Syntax highlighter based off of the OCR Computer Science specification.",
-  "version": "0.0.1",
-  "engines": {
-    "vscode": "^1.101.0"
-  },
-  "categories": [
-    "Programming Languages"
-  ],
-  "contributes": {
-    "languages": [{
-      "id": "ocr-pseudocode",
-      "aliases": ["OCR Pseudocode", "ocr-pseudocode"],
-      "extensions": [".pseudo",".pseudocode",".ocr"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "ocr-pseudocode",
-      "scopeName": "source.ocr-pseudocode",
-      "path": "./syntaxes/ocr-pseudocode.tmLanguage.json"
-    }]
-  }
+	"name": "pseudocode-ocr",
+	"displayName": "pseudocode-ocr",
+	"description": "A syntax highlighter and opinionated superset of the OCR A-level Computer Science Specification",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.101.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "ocr-pseudocode",
+				"aliases": [
+					"OCR Pseudocode",
+					"ocr-pseudocode"
+				],
+				"extensions": [
+					".pseudo",
+					".pseudocode",
+					".ocr"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "ocr-pseudocode",
+				"scopeName": "source.ocr-pseudocode",
+				"path": "./syntaxes/ocr-pseudocode.tmLanguage.json"
+			}
+		]
+	}
 }
