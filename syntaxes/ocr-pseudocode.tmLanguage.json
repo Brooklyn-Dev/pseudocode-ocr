@@ -40,11 +40,22 @@
 			]
 		},
 		"classes": {
-			"match": "\\b(class)\\s+([A-Za-z_][A-Za-z0-9_]*)",
-			"captures": {
-				"1": { "name": "storage.type.ocr-pseudocode" },
-				"2": { "name": "entity.name.class.ocr-pseudocode" }
-			}
+			"patterns": [
+				{
+					"match": "\\b(class)\\s+([A-Za-z_][A-Za-z0-9_]*)",
+					"captures": {
+						"1": { "name": "storage.type.ocr-pseudocode" },
+						"2": { "name": "entity.name.class.ocr-pseudocode" }
+					}
+				},
+				{
+					"match": "\\b(inherits)\\s+([A-Za-z_][A-Za-z0-9_]*)",
+					"captures": {
+						"1": { "name": "storage.type.ocr-pseudocode" },
+						"2": { "name": "entity.other.inherited-class.ocr-pseudocode" }
+					}
+				}
+			]
 		},
 		"subroutines": {
 			"match": "\\b(procedure|function)\\s+([A-Za-z_][A-Za-z0-9_]*)\\s*\\(([^)]*)\\)",
@@ -62,7 +73,7 @@
 				},
 				{
 					"name": "storage.type.ocr-pseudocode",
-					"match": "\\b(class|inherits|super|endclass|new|procedure|endprocedure|function|endfunction)\\b"
+					"match": "\\b(class|super|endclass|new|procedure|endprocedure|function|endfunction)\\b"
 				},
 				{
 					"name": "storage.modifier.ocr-pseudocode",
