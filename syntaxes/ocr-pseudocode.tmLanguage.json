@@ -60,12 +60,18 @@
 		"subroutines": {
 			"patterns": [
 				{
-					"match": "\\b(procedure|function)\\s+([A-Za-z_][A-Za-z0-9_]*)\\s*\\(([^)]*)\\)",
-					"captures": {
+					"begin": "\\b(procedure|function)\\s+([A-Za-z_][A-Za-z0-9_]*)\\s*\\(",
+					"end": "\\)",
+					"beginCaptures": {
 						"1": { "name": "storage.type.ocr-pseudocode" },
-						"2": { "name": "entity.name.function.ocr-pseudocode" },
-						"3": { "name": "variable.parameter.ocr-pseudocode" }
-					}
+						"2": { "name": "entity.name.function.ocr-pseudocode" }
+					},
+					"patterns": [
+						{
+							"name": "variable.parameter.ocr-pseudocode",
+							"match": "\\b[A-Za-z_][A-Za-z0-9_]*\\b"
+						}
+					]
 				},
 				{
 					"name": "entity.name.function.ocr-pseudocode",
