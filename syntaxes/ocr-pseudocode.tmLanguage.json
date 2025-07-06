@@ -9,6 +9,9 @@
 			"include": "#classes"
 		},
 		{
+			"include": "#interfaces"
+		},
+		{
 			"include": "#properties"
 		},
 		{
@@ -57,8 +60,22 @@
 						"1": { "name": "storage.type.ocr-pseudocode" },
 						"2": { "name": "entity.other.inherited-class.ocr-pseudocode" }
 					}
+				},
+				{
+					"match": "\\b(implements)\\s+([A-Za-z_][A-Za-z0-9_]*)",
+					"captures": {
+						"1": { "name": "storage.type.ocr-pseudocode" },
+						"2": { "name": "entity.other.inherited-class.ocr-pseudocode" }
+					}
 				}
 			]
+		},
+		"interfaces": {
+			"match": "\\b(interface)\\s+([A-Za-z_][A-Za-z0-9_]*)",
+			"captures": {
+				"1": { "name": "storage.type.ocr-pseudocode" },
+				"2": { "name": "entity.name.class.ocr-pseudocode" }
+			}
 		},
 		"subroutines": {
 			"patterns": [
@@ -98,11 +115,11 @@
 				},
 				{
 					"name": "storage.type.ocr-pseudocode",
-					"match": "\\b(class|super|endclass|new|procedure|endprocedure|function|endfunction)\\b"
+					"match": "\\b(class|super|endclass|new|interface|endinterface|procedure|endprocedure|function|endfunction)\\b"
 				},
 				{
 					"name": "storage.modifier.ocr-pseudocode",
-					"match": "\\b(public|protected|private|static|const|readonly|global|local|async)\\b"
+					"match": "\\b(public|protected|private|static|const|readonly|global|local|async|abstract)\\b"
 				},
 				{
 					"name": "constant.language.ocr-pseudocode",

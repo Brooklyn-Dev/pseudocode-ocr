@@ -8,7 +8,7 @@ It stays faithful to the offical OCR exam reference language, while introducing 
 
 -   Block comments: `/* */`
 -   Bitwise operators: `XOR`, `LSHIFT`, `RSHIFT`
--   Access modifiers: `protected`, `static`, `const`, `readonly`, `local`
+-   Access modifiers: `protected`, `static`, `const`, `readonly`, `local`, `abstract`
 -   Extended conditionals: `elif`
 -   Control flow: `continue`, `break`
 -   Constants and values: `null`, `undefined`
@@ -17,6 +17,6 @@ It stays faithful to the offical OCR exam reference language, while introducing 
 -   Instance properties: `size`, `count`
 -   Exception handling: `try`, `catch`, `finally`, `throw`, `raise`, `endtry`
 -   Concurrency: `async`, `await`
--   Data structures: `struct`, `endstruct`, `enum`, `endenum`
+-   Data structures: `struct`, `endstruct`, `enum`, `endenum`, `interface`, `endinterface`, `implements`
 
 While pseudocode often isn't used in industry, it is an essential component of the NEA. This extension makes writing and reading pseudocode more pleasant and structured.
