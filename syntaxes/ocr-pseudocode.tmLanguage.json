@@ -3,19 +3,25 @@
 	"name": "OCR Pseudocode",
 	"patterns": [
 		{
+			"include": "#subroutines"
+		},
+		{
+			"include": "#classes"
+		},
+		{
 			"include": "#comments"
 		},
 		{
 			"include": "#keywords"
 		},
 		{
-			"include": "#strings"
-		},
-		{
 			"include": "#numbers"
 		},
 		{
 			"include": "#operators"
+		},
+		{
+			"include": "#strings"
 		}
 	],
 	"repository": {
@@ -32,6 +38,21 @@
 					"end": "$"
 				}
 			]
+		},
+		"classes": {
+			"match": "\\b(class)\\s+([A-Za-z_][A-Za-z0-9_]*)",
+			"captures": {
+				"1": { "name": "storage.type.ocr-pseudocode" },
+				"2": { "name": "entity.name.class.ocr-pseudocode" }
+			}
+		},
+		"subroutines": {
+			"match": "\\b(procedure|function)\\s+([A-Za-z_][A-Za-z0-9_]*)\\s*\\(([^)]*)\\)",
+			"captures": {
+				"1": { "name": "storage.type.ocr-pseudocode" },
+				"2": { "name": "entity.name.function.ocr-pseudocode" },
+				"3": { "name": "variable.parameter.ocr-pseudocode" }
+			}
 		},
 		"keywords": {
 			"patterns": [
