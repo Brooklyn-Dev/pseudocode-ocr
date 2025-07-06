@@ -82,7 +82,7 @@
 				},
 				{
 					"name": "entity.name.function.ocr-pseudocode",
-					"match": "\\b(?!(?:if|then|elseif|elif|else|endif|switch|case|default|endswitch|while|endwhile|do|until|for|to|step|each|in|next|continue|break|return)\\b)([a-zA-Z_][a-zA-Z0-9_]*)(?=\\s*\\()"
+					"match": "\\b(?!(?:if|then|elseif|elif|else|endif|switch|case|default|endswitch|while|endwhile|do|until|for|to|step|each|in|next|continue|break|return|try|catch|finally|throw|raise|endtry)\\b)([a-zA-Z_][a-zA-Z0-9_]*)(?=\\s*\\()"
 				}
 			]
 		},
@@ -94,7 +94,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.ocr-pseudocode",
-					"match": "\\b(if|then|elseif|elif|else|endif|switch|case|default|endswitch|while|endwhile|do|until|for|to|step|each|in|next|continue|break|return)\\b"
+					"match": "\\b(if|then|elseif|elif|else|endif|switch|case|default|endswitch|while|endwhile|do|until|for|to|step|each|in|next|continue|break|return|try|catch|finally|throw|raise|endtry)\\b"
 				},
 				{
 					"name": "storage.type.ocr-pseudocode",
