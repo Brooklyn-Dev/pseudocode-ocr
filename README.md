@@ -1,6 +1,6 @@
 # Pseudocode OCR
 
-A syntax highlighter and opinionated superset of the OCR A-level Computer Science [Specification](https://www.ocr.org.uk/images/170844-specification-accredited-a-level-gce-computer-science-h446.pdf#page=37).
+Syntax highlighter and opinionated superset of the OCR A-level Computer Science [Specification](https://www.ocr.org.uk/images/170844-specification-accredited-a-level-gce-computer-science-h446.pdf#page=37).
 
 This extension aims to enhance the experience of students taking the OCR A-level Computer Science course by providing syntax highlighting for pseudocode written in the design section of the NEA (Non-Exam Assessment.)
 
