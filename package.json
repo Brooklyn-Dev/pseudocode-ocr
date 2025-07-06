@@ -9,13 +9,28 @@
 	"categories": [
 		"Programming Languages"
 	],
+	"main": "./src/extension.js",
+	"type": "module",
 	"contributes": {
 		"languages": [
 			{
 				"id": "ocr-pseudocode",
 				"aliases": [
 					"OCR Pseudocode",
-					"ocr-pseudocode"
+					"pseudocode"
+				],
+				"extensions": [
+					".pseudo",
+					".pseudocode",
+					".ocr"
+				],
+				"configuration": "./language-configuration.json"
+			},
+			{
+				"id": "ocr-pseudocode-strict",
+				"aliases": [
+					"OCR Pseudocode (Strict)",
+					"pseudocode-strict"
 				],
 				"extensions": [
 					".pseudo",
@@ -30,6 +45,11 @@
 				"language": "ocr-pseudocode",
 				"scopeName": "source.ocr-pseudocode",
 				"path": "./syntaxes/ocr-pseudocode.tmLanguage.json"
+			},
+			{
+				"language": "ocr-pseudocode-strict",
+				"scopeName": "source.ocr-pseudocode-strict",
+				"path": "./syntaxes/ocr-pseudocode-strict.tmLanguage.json"
 			}
 		]
 	}

@@ -4,8 +4,13 @@ A syntax highlighter and opinionated superset of the OCR A-level Computer Scienc
 
 This extension aims to enhance the experience of students taking the OCR A-level Computer Science course by providing syntax highlighting for pseudocode written in the design section of the NEA (Non-Exam Assessment.)
 
+This extension supports `.pseudo`, `.pseudocode` and `.ocr` file extensions.
+
+You can disable the extended syntax by typing `// strict` at the top of a file. This will only highlight valid OCR exam reference language.
+
 It stays faithful to the offical OCR exam reference language, while introducing practical extensions for real-world design and NEA coursework, which are:
 
+-   Extended number system: binary, octal, hexadecimal, scientific notation
 -   Block comments: `/* */`
 -   Bitwise operators: `XOR`, `LSHIFT`, `RSHIFT`
 -   Access modifiers: `protected`, `static`, `const`, `readonly`, `local`, `abstract`
