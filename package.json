@@ -51,6 +51,16 @@
 				"scopeName": "source.ocr-pseudocode-strict",
 				"path": "./syntaxes/ocr-pseudocode-strict.tmLanguage.json"
 			}
+		],
+		"snippets": [
+			{
+				"language": "ocr-pseudocode",
+				"path": "./snippets/ocr-pseudocode.json"
+			},
+			{
+				"language": "ocr-pseudocode-strict",
+				"path": "./snippets/ocr-pseudocode.json"
+			}
 		]
 	}
 }

@@ -1,0 +1,73 @@
+{
+	"class": {
+		"prefix": "class",
+		"body": ["class ${1:ClassName}", "\tpublic procedure new(${2:param})", "\t\t$3", "\tendprocedure", "endclass"],
+		"description": "Define a class (Pseudocode)"
+	},
+	"classinherits": {
+		"prefix": "classinherits",
+		"body": [
+			"class ${1:ClassName} inherits ${2:ParentClass}",
+			"\tpublic procedure new(${3:param})",
+			"\t\t$4",
+			"\tendprocedure",
+			"endclass"
+		],
+		"description": "Define a class which inherits a superclass (Pseudocode)"
+	},
+	"dountil": {
+		"prefix": "do",
+		"body": ["do", "\t$1", "until ${2:condition}"],
+		"description": "Create a do-until loop (Pseudocode)"
+	},
+	"for": {
+		"prefix": "for",
+		"body": ["for ${1:counter} = ${2:start} to ${3:end}", "\t$4", "next ${1:counter}"],
+		"description": "Create a for loop (Pseudocode)"
+	},
+	"forstep": {
+		"prefix": "forstep",
+		"body": ["for ${1:counter} = ${2:start} to ${3:end} step ${4:increment}", "\t$5", "next ${1:counter}"],
+		"description": "Create a for loop with step (Pseudocode)"
+	},
+	"foreach": {
+		"prefix": "foreach",
+		"body": ["for each ${1:item} in ${2:iterable}", "\t$3", "next ${1:item}"],
+		"description": "Create a foreach loop (Pseudocode)"
+	},
+	"function": {
+		"prefix": "function",
+		"body": ["function ${1:functionName}(${2:param})", "\t$3", "endfunction"],
+		"description": "Define a new function (Pseudocode)"
+	},
+	"if": {
+		"prefix": "if",
+		"body": ["if ${1:condition} then", "\t$2", "endif"],
+		"description": "Create an if block (Pseudocode)"
+	},
+	"ifelse": {
+		"prefix": "ifelse",
+		"body": ["if ${1:condition} then", "\t$2", "else", "\t$3", "endif"],
+		"description": "Create an if-else block (Pseudocode)"
+	},
+	"ifelseif": {
+		"prefix": "ifelseif",
+		"body": ["if ${1:condition} then", "\t$2", "elseif", "\t$3", "else", "\t$4", "endif"],
+		"description": "Create an if-elseif-else block (Pseudocode)"
+	},
+	"procedure": {
+		"prefix": "procedure",
+		"body": ["procedure ${1:procedureName}(${2:param})", "\t$3", "endprocedure"],
+		"description": "Define a new procedure (Pseudocode)"
+	},
+	"switch": {
+		"prefix": "switch",
+		"body": ["switch ${1:entry}:", "\tcase $2:", "\t\t$3", "\tdefault:", "\t\t$4", "endswitch"],
+		"description": "Create a switch block (Pseudocode)"
+	},
+	"while": {
+		"prefix": "while",
+		"body": ["while ${1:condition}", "\t$2", "endwhile"],
+		"description": "Create a while loop (Pseudocode)"
+	}
+}
