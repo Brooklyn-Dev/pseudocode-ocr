@@ -58,7 +58,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.ocr-pseudocode",
-					"match": "\\b(if|then|elseif|elif|else|endif|while|endwhile|for|to|next|continue|break|return)\\b"
+					"match": "\\b(if|then|elseif|elif|else|endif|switch|case|default|endswitch|while|endwhile|for|to|next|continue|break|return)\\b"
 				},
 				{
 					"name": "storage.type.ocr-pseudocode",
