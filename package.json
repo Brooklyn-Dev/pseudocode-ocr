@@ -34,8 +34,6 @@
 		"package": "vsce package",
 		"publish": "vsce publish"
 	},
-	"main": "./src/extension.js",
-	"type": "module",
 	"contributes": {
 		"languages": [
 			{
