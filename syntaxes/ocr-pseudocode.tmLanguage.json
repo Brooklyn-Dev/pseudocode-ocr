@@ -68,6 +68,10 @@
 					},
 					"patterns": [
 						{
+							"name": "storage.modifier.ocr-pseudocode",
+							"match": "\\b(byVal|byRef)\\b"
+						},
+						{
 							"name": "variable.parameter.ocr-pseudocode",
 							"match": "\\b[A-Za-z_][A-Za-z0-9_]*\\b"
 						}
