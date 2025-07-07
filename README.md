@@ -1,5 +1,10 @@
 # Pseudocode OCR
 
+![Visual Studio Code](https://img.shields.io/badge/VS%20Code-Extension-blue)
+![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/BrooklynDev.pseudocode-ocr)
+![GitHub Issues](https://img.shields.io/github/issues/Brooklyn-Dev/pseudocode-ocr)
+![License](https://img.shields.io/badge/license-MIT-green)
+
 Syntax highlighter and opinionated superset of the OCR A-level Computer Science [Specification](https://www.ocr.org.uk/images/170844-specification-accredited-a-level-gce-computer-science-h446.pdf#page=37).
 
 Made for Hack Club's YSWS [Extensify](https://extensify.hackclub.com/).
