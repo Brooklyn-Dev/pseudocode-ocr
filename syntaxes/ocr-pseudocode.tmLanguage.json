@@ -127,7 +127,7 @@
 				},
 				{
 					"name": "entity.name.function.ocr-pseudocode",
-					"match": "\\b(?!(?:if|then|elseif|elif|else|endif|switch|case|default|endswitch|while|endwhile|do|until|for|to|step|each|in|next|continue|break|return|try|catch|finally|throw|raise|endtry|await)\\b)([a-zA-Z_][a-zA-Z0-9_]*)(?=\\s*\\()"
+					"match": "\\b(?!(?:if|then|elseif|elif|else|endif|switch|case|default|endswitch|while|endwhile|do|until|for|to|step|each|in|next|continue|break|return|try|catch|finally|throw|raise|endtry|await|AND|OR|NOT|XOR|LSHIFT|RSHIFT|=|==|!=|<|<=|>|>=|\\+|\\-|\\*|\\/|MOD|DIV|\\^)\\b)([a-zA-Z_][a-zA-Z0-9_]*)(?=\\s*\\()"
 				}
 			]
 		},
