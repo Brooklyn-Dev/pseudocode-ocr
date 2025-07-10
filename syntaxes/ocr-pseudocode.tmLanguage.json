@@ -206,8 +206,16 @@
 			]
 		},
 		"operators": {
-			"name": "keyword.operator.ocr-pseudocode",
-			"match": "(AND|OR|NOT|XOR|LSHIFT|RSHIFT|=|==|!=|<|<=|>|>=|\\+|\\-|\\*|\\/|MOD|DIV|\\^)"
+			"patterns": [
+				{
+					"name": "keyword.operator.word.ocr-pseudocode",
+					"match": "\\b(AND|OR|NOT|XOR|LSHIFT|RSHIFT|MOD|DIV)\\b"
+				},
+				{
+					"name": "keyword.operator.symbol.ocr-pseudocode", 
+					"match": "(==|!=|<=|>=|=|<|>|\\+|\\-|\\*|\\/|\\^)"
+				}
+			]
 		}
 	},
 	"scopeName": "source.ocr-pseudocode"

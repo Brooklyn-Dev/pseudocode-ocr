@@ -132,8 +132,16 @@
 			"match": "\\b\\d+(\\.\\d+)?\\b"
 		},
 		"operators": {
-			"name": "keyword.operator.ocr-pseudocode-strict",
-			"match": "(AND|OR|NOT|=|==|!=|<|<=|>|>=|\\+|\\-|\\*|\\/|MOD|DIV|\\^)"
+			"patterns": [
+				{
+					"name": "keyword.operator.word.ocr-pseudocode",
+					"match": "\\b(AND|OR|NOT|MOD|DIV)\\b"
+				},
+				{
+					"name": "keyword.operator.symbol.ocr-pseudocode", 
+					"match": "(==|!=|<=|>=|=|<|>|\\+|\\-|\\*|\\/|\\^)"
+				}
+			]
 		}
 	},
 	"scopeName": "source.ocr-pseudocode-strict"
